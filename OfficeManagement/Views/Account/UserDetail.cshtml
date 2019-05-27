@@ -1,0 +1,45 @@
+﻿@model OfficeManagement.EF.UserDetail
+
+@{
+    ViewData["Title"] = "Employee Detail For Admin";
+}
+
+<h2>Employee Detail For Admin</h2>
+@using (Html.BeginForm())
+{
+<div>
+    <hr />
+    @Html.HiddenFor(model => model.applicationUser.UserName)
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.applicationUser.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.applicationUser.UserName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.applicationUser.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.applicationUser.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.applicationUser.PicturePath)
+        </dt>
+        <dd>
+            <img src="@Model.applicationUser.PicturePath" class="" width="150px" height="80px" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Positions)
+        </dt>
+        <dd>
+
+            @Html.DropDownListFor(model => model.applicationUser.PositionId, new SelectList(Model.Positions, "PositionId", "PositionName", Model.applicationUser.PositionId), "-Select-")
+            <input type="submit" class="btn btn-default" value="save" />
+        </dd>
+    </dl>
+</div>
+}
+    <div>
+        @Html.ActionLink("Back to List", "Admin")
+    </div>

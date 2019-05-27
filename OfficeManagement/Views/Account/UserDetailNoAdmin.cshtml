@@ -1,0 +1,56 @@
+﻿@model OfficeManagement.EF.UserDetailNoAdmin
+
+@{
+    ViewData["Title"] = "Employee Detail";
+}
+
+<h2>Employee Detail</h2>
+@using (Html.BeginForm())
+{
+<div>
+    <hr />
+    @Html.HiddenFor(model => model.applicationUser.UserName)
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.applicationUser.UserName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.applicationUser.UserName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.applicationUser.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.applicationUser.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.applicationUser.PicturePath)
+        </dt>
+        <dd>
+            <img src="@Model.applicationUser.PicturePath" class="" width="150px" height="80px" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.supervisor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.supervisor)
+            @*@Html.DropDownListFor(model => model.applicationUser.PositionId, new SelectList(Model.Positions, "PositionId", "PositionName", Model.applicationUser.PositionId), "-Select-")*@
+        </dd>
+
+        <dt>@Html.DisplayName("Direct Reports")</dt>
+        <dd>
+            <table class="table">
+                @foreach (var item in Model.directReportUserNames)
+                {
+                    <tr>
+                        <td>
+                            @Html.ActionLink(item, "UserDetailNoAdmin", new { userName = item })
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+    
+</div>
+}

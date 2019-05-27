@@ -1,0 +1,12 @@
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\bin\Debug\netcoreapp2.0\OfficeManagement.deps.json
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\bin\Debug\netcoreapp2.0\OfficeManagement.runtimeconfig.json
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\bin\Debug\netcoreapp2.0\OfficeManagement.runtimeconfig.dev.json
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\bin\Debug\netcoreapp2.0\OfficeManagement.dll
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\bin\Debug\netcoreapp2.0\OfficeManagement.pdb
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\OfficeManagement.csproj.CoreCompileInputs.cache
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\OfficeManagement.AssemblyInfoInputs.cache
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\OfficeManagement.AssemblyInfo.cs
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\OfficeManagement.dll
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\OfficeManagement.pdb
+C:\Users\shi\source\repos\OfficeManagement\OfficeManagement\obj\Debug\netcoreapp2.0\OfficeManagement.csprojAssemblyReference.cache
